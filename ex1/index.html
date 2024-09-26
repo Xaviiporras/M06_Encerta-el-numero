@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleJoc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Adivina el número entre <span id="numMin">?</span> y <span id="numMax">?</span></h1>
+        <button id="reiniciarBoton" onclick="buttonReinicia()">Reinicia!</button>
+    </header>
+
+    <main id="main">
+        <h2>Busca el número!</h2>
+        <div id="div_interrogant">
+            <p id="interrogant">?</p>
+        </div>
+        <p id="jugada">Comencem la partida...</p>
+    </main>
+
+    <footer id="footer">
+        <div id="footer_left">
+            <input id="numInput" type="number">
+            <button id="provaBoton" onclick="buttonProva()">Prova!</button>
+            <p id="intentos"></p>
+        </div> 
+        <div id="footer_right">
+            <div>
+                <p>Jugades:</p>
+                <p id="jugades"></p>
+            </div>
+            <div>
+                <p>Total punts:</p>
+                <p id="punts">0</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jocScript.js"></script>
+</body>
+</html>
